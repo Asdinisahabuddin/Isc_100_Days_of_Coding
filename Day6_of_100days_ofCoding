@@ -1,0 +1,32 @@
+public class day6 {
+	public static void main(String[] args) {
+		//Operator Aritmatika
+		//1. Penjumlahan
+		int a = 20;
+		int b = 5;
+		
+		int hasil =a+b;
+		System.out.println(a+" + " +b+" = "+hasil);
+		
+		//2. Pengurangan
+		hasil =a-b;
+		System.out.println(a+" - " +b+" = "+hasil);
+		
+		//3. Perkalian
+		hasil =a*b;
+		System.out.println(a+" * " +b+" = "+hasil);
+		
+		//4. Pembaian
+		float c = 26;
+		float d = 5;
+		
+		float hasilFloat = c/d;
+		System.out.println(c+" / "+d+" = "+hasilFloat);
+		
+		//5. Modulus
+		hasilFloat = c%d;
+		System.out.println(c+" % "+d+" = "+hasilFloat);
+		
+		
+	}
+}
