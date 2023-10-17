@@ -3,22 +3,22 @@ package operatorLogika;
 public class day9 {
 	public static void main(String[] args) {
 		//NOT
-		System.out.print("Not: ");
 		boolean a = false;
-		System.out.println(!a);
+		System.out.println("NOT =" +!a);
 		
 		//AND
-		System.out.print("AND: ");
 		boolean b = true;
 		boolean c = false;
 		boolean d = b && c;
-		System.out.println(d);
+		System.out.println(b+" AND "+c+" = " +d);
 		
 		//OR
-		System.out.print("OR: ");
 		boolean e = true;
 		boolean f = false;
 		boolean g = e || f;
+		System.out.println(e+" OR "+f+" = "+g);
+	}
+}g = e || f;
 		System.out.println(g);
 	}
 }
