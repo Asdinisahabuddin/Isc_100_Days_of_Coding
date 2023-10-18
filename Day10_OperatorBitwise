@@ -1,0 +1,27 @@
+class Day10 {
+  public static void main(String args[]){
+    
+    int dini = 1;
+    int amma = 0;
+    int hasil;
+      
+    hasil = dini & amma;
+    System.out.println("Hasil dari dini & amma : " + hasil );  
+      
+    hasil = dini | amma;
+    System.out.println("Hasil dari dini | amma : " + hasil );  
+      
+    hasil = dini ^ amma;
+    System.out.println("Hasil dari dini ^ amma : " + hasil );  
+      
+    hasil = ~dini;
+    System.out.println("Hasil dari ~dini : " + hasil );  
+      
+    hasil = dini >> 1;
+    System.out.println("Hasil dari dini >> 1 : " + hasil );  
+      
+    hasil = amma << 2;
+    System.out.println("Hasil dari amma << 2 : " + hasil );  
+       
+  }
+}
