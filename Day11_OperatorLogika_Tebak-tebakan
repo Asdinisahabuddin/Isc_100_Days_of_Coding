@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Day11 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int nilainya = 10;
+		int tebakannya;
+		boolean hmm;
+		
+		System.out.print("Coba tebak	: ");
+		tebakannya = sc.nextInt();
+		System.out.println("Nilai tebakan	: "+tebakannya);
+		
+		hmm = (tebakannya == nilainya);
+		System.out.println("Makjrenggg 	: "+hmm);
+		
+		System.out.println(" ");
+		
+		System.out.println("Selain nilai di antara 5 dan 8 adalah false ");
+		System.out.print("Cobami		: ");
+		tebakannya = sc.nextInt();
+		hmm = (tebakannya > 5) && (tebakannya < 9);
+		System.out.print("Bilang memangka	: "+hmm);
+		
+	}
+}
