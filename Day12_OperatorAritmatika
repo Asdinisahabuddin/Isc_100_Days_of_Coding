@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Day12 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Jumlah kemeja: ");
+		int kemeja = sc.nextInt();
+		System.out.print("Jumlah kotak: ");
+		int kotak = sc.nextInt();
+		
+		System.out.println("Jumlah kotak yang terisi: "+kotak);
+		
+		int belum_dikemas;
+		belum_dikemas =(kemeja - kotak);
+		System.out.println("Jumlah kemeja yang belum dikemas: "+belum_dikemas);
+		
+		
+		
+		
+	}
+}
