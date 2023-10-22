@@ -3,22 +3,23 @@ public class Day13 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Masukkan tahun kelahiran kamu: ");
+		System.out.print("Masukkan tahun kelahiran mu: ");
 		int tahun_lahir = sc.nextInt();
 		System.out.print("Sekarang tahun berapa?: ");
 		int tahun_sekarang = sc.nextInt();
-		int umur;
+		int umur, umur2;
 		
-		//Operator aritmatika (-)
+		//Operator aritmatika 
 		umur = (tahun_sekarang - tahun_lahir);
-		System.out.println("Umur anda Sekarang: "+umur);
+		System.out.println("Umur kamu sekarang adalah "+umur+" tahun");
 		
-		if (umur >= 20) {
-			System.out.println("Kamu sudah tua T_T");
-		}	
-		else {
-			System.out.println("Masih comel-comel ^_^");
-		}
+		umur2 = (umur + 2);
+		System.out.println("Dua tahun kedepan kamu akan berumur "+umur2+" tahun");
+		
+		
 		
 	}
+}		
+	}
+}
 }
