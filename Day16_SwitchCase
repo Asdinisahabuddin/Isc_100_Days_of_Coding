@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Day16 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan hari weekend: ");
+        String weekend = sc.nextLine();
+        
+        switch (weekend) {
+            case "sabtu" :
+                System.out.println("yeaayy full tidur sampe besok:v");
+                break;
+            case "minggu" :
+                System.out.println("Besok senin:)");
+                break;
+            default:
+                System.out.println("semangat yaww ^_^");
+        }
+    }
+}
