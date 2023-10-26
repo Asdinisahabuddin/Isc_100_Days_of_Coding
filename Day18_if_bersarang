@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Day18 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Nilai a: ");
+		int a = sc.nextInt();
+		System.out.print("Nilai b: ");
+		int b = sc.nextInt();
+		
+		if (a > b){
+			System.out.println("a lebih besar dari b");
+			if (a > 0){
+				System.out.println("a merupakan bilangan positif");
+			}else if (a < 0){
+				System.out.println("a merupakan bialangan negatif");
+			}else if (a<b){
+				System.out.println("a adalah 0");
+			}
+		}else {
+			System.out.println("a tidak lebih besar dari b");
+		}
+	}
+}
