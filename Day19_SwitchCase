@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Day19 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Masukkan hari: ");
+        String hari = sc.nextLine();
+        
+        switch (hari) {
+            case "senin" :
+                System.out.println("Jangan lupa puasa sunnah");
+                break;
+            case "selasa" :
+                System.out.println("Di anjurkan membaca surah Al-Mulk");
+                break;
+           case "rabu" :
+           	System.out.println("Waktu terbaik memulai kebaikan");
+           	break;
+           case "kamis" :
+           	System.out.println("Jangan lupa puasa sunnah:) ");
+           	break;
+           case "jumat" :
+           	System.out.println("Jangan lupa baca surah Al-Kafi");
+           	break;
+           case "sabtu" :
+           	System.out.println("Jangan lupa shalat 5 waktu");
+           	break;
+           case "ahad" :
+           	System.out.println("Baca surah Al-Waqiah yaaw");
+           	break;
+            default:
+                System.out.println("Fii Amanillah:)");
+        }
+    }
+}
