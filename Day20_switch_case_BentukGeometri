@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("pilih geometri ( masukkan 1, 2, 3, atau 4): ");
+		int angka = sc.nextInt();
+		int s, a, t, r, p, l;
+		
+		switch (angka){
+			case 1:
+				System.out.println("menghitung luas persegi persegi: ");
+				System.out.print("sisi persegi(s) = ");
+				s = sc.nextInt();
+				System.out.println("luas = "+s*s);
+				break;
+			case 2:
+				System.out.println("menghitung luas segitiga: ");
+				System.out.print("alas segitiga(a) = ");
+				a = sc.nextInt();
+				System.out.print("tinggi segitiga(t) = ");
+				t = sc.nextInt();
+				double x = 0.5;
+				System.out.println("luas = "+x*a*t);
+				break;
+			case 3:
+				System.out.println("menghitung luas lingkaran: ");
+				System.out.print("jari jari = ");
+				r = sc.nextInt();
+				double pi = 3.14;
+				System.out.print("luas = "+pi*r*r);
+				break;
+			case 4:
+				System.out.println("menghitung luas persegi panjang: ");
+				System.out.print("panjang(p) = ");
+				p = sc.nextInt();
+				System.out.print("lebar(l) = ");
+				l = sc.nextInt();
+				System.out.print("luas = "+p*l);
+				break;
+				
+				
+		}
+		
+	}
+}
