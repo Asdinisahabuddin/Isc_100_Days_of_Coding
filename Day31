@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Day31 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("masukkan bilangan bulat: ");
+		int bilangan = sc.nextInt();
+		
+		int hasil = bilangan * bilangan;
+		System.out.println(hasil);
+	}
+}
