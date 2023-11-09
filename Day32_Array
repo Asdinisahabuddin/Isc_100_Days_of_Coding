@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Day32_Array {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String [] arrayString = {"Mangga", "Apel", "Pisang", "Semangka"};
+		
+		System.out.print("Masukkan pilihan buah array: ");
+		int a = sc.nextInt();
+		
+
+		System.out.println("buah: "+arrayString[a]);
+	}
+}
