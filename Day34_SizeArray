@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Day34_SizeArray {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Size Array: ");
+		int size = sc.nextInt();
+		int [] array1D = new int [size];
+		
+		for(int i = 0; i < size; i++){
+			array1D[i] = sc.nextInt();
+		}
+		
+		System.out.print("[");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array1D[i]);
+            if (i < size - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+	}
+}
