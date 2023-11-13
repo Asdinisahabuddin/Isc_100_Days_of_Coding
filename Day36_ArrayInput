@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Day36_ArrayInput {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah baris: ");
+        int Baris = scanner.nextInt();
+        System.out.print("Masukkan jumlah kolom: ");
+        int Kolom = scanner.nextInt();
+        
+        int[][] array2D = new int[Baris][Kolom];
+        int counter = 1;
+
+        for (int i = 0; i < Baris; i++) {
+            for (int j = 0; j < Kolom; j++) {
+                array2D[i][j] = counter++;
+            }
+        }
+        
+        for (int i = 0; i < Baris; i++) {
+            for (int j = 0; j < Kolom; j++) {
+                System.out.print(array2D[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
