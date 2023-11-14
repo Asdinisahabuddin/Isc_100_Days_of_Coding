@@ -1,0 +1,28 @@
+import java.util.Arrays;
+public class Day37_OperasiDiArray {
+    public static void main(String[] args) {
+        int[] nilai = {1, 2 ,3 , 4};
+        
+        int jumlahElemen = nilai.length;
+        
+        int total = 0;
+        for (int i = 0; i < nilai.length; i++) {
+            total += nilai[i];
+        }
+        
+        double rataRata = (double) total / nilai.length;
+        
+        int minimum = Arrays.stream(nilai).min().getAsInt();
+        
+        int maksimum = Arrays.stream(nilai).max().getAsInt();
+
+        
+        System.out.println("Nilai		:" + Arrays.toString(nilai));
+        System.out.println("Jumlah elemen	:"+jumlahElemen);
+        System.out.println("Total nilai	:" + total);
+        System.out.println("Nilai rata-rata	:" + rataRata);
+        System.out.println("Minimum nilai	:" + minimum);
+        System.out.println("Maksimum nilai	:" + maksimum);
+        
+    }
+}
