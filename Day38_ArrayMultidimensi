@@ -1,0 +1,23 @@
+import java.util.Arrays;
+
+public class Day38_ArrayMultidimensi{
+	public static void main(String[] args) {
+		int [] [] array = new int [2] [2];
+		array [0] [0] = 4;
+		array [0] [1] = 3;
+		array [1] [0] = 2;
+		array [1] [1] = 1;
+		
+	
+		for(int i = 0; i < array.length; i++){
+			System.out.print("[");
+			for(int j = 0; j< array[i].length;j++){
+				System.out.print(array[i][j]);
+				if (j < array[i].length - 1){	
+					System.out.print(", ");
+				}
+			}	
+			System.out.println("]");
+		}
+	}
+}
