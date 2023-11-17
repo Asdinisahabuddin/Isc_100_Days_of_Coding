@@ -1,0 +1,16 @@
+public class Day40_AVG_SUM {
+    public static void main(String[] args) {
+        int sum = 0;
+        int jumlah = 0;
+
+        for (int i = 1; i <= 100; i += 2) {
+            sum += i;
+            jumlah++;
+        }
+
+        double avg = sum / jumlah;
+
+        System.out.println("sum bilangan ganjil		:" + sum);
+        System.out.println("Rata-rata bilangan ganjil	:" + avg);
+    }
+}
