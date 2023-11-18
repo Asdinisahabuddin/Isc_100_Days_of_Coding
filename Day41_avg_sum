@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Day41_avg_sum{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("inputan2: ");
+        int a = input.nextInt();
+        
+        System.out.print("inputan1: ");
+        int b= input.nextInt();
+       
+        int sum = a + b;
+      
+        double avg = sum / 2;
+
+        System.out.println("Averege: " + avg);
+        System.out.println("SUM: " + sum);
+
+
+    }
+}
