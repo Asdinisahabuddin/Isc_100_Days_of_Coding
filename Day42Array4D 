@@ -1,0 +1,35 @@
+import java.util.Random;
+
+public class Day42Array4D {
+	public static void main(String[] args) {
+		int size1 = 5;
+		int size2 = 5;
+		int size3 = 5;
+		int size4 = 5;
+
+		int[][][][] array4D = new int[size1][size2][size3][size4];
+
+		Random nilaiRandom = new Random();
+		for (int i = 0; i < size1; i++) {
+			for (int j = 0; j < size2; j++) {
+				for (int k = 0; k < size3; k++) {
+					for (int l = 0; l < size4; l++) {
+						array4D[i][j][k][l] = nilaiRandom.nextInt(100);
+					}
+				}
+			}
+		}
+
+		for (int i = 0; i < size1; i++) {
+			for (int j = 0; j < size2; j++) {
+				for (int k = 0; k < size3; k++) {
+					for (int l = 0; l < size4; l++) {
+						System.out.print(array4D[i][j][k][l] + " ");
+					}
+					System.out.println();
+				}
+				System.out.println();
+			}
+		}
+	}
+}
