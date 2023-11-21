@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class Day44 {
+	public static void main(String[] args) {
+		double [] data = {4, 3.1, 3, 9, 0.1, 4.2, 2, 1, 7, 9};
+		Arrays.sort (data);
+		
+		for (int i = 0; i < data.length; i++){
+			System.out.println(data[i]);
+		}
+	}
+}
