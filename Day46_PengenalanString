@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class Day46_PengenalanString {
+	public static void main(String[] args) {
+		String kata = "Annyeong!";
+
+		System.out.println("Isi String: " + kata);
+
+		char karakterPertama = kata.charAt(0);
+		System.out.println("Karakter pertama: " + karakterPertama);
+
+		char[] arrayKarakter = kata.toCharArray();
+		System.out.println("Array karakter: " + Arrays.toString(arrayKarakter));
+
+		char karakter = 'A';
+
+		System.out.println("Isi char: " + karakter);
+	}
+}
