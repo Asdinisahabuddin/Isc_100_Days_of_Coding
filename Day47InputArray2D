@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Day47InputArray2D {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int baris = 3;
+        int kolom = 3;
+
+        int[][] array2D = new int[baris][kolom];
+
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                System.out.print("Masukkan elemen baris ke-" + (i + 1) + ", kolom ke-" + (j + 1) + ": ");
+                array2D[i][j] = scanner.nextInt();
+            }
+        }
+        
+        System.out.println("Array 2D:");
+        for (int i = 0; i < baris; i++) {
+            for (int j = 0; j < kolom; j++) {
+                System.out.print(array2D[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
