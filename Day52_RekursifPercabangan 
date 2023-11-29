@@ -1,0 +1,15 @@
+public class Day52_RekursifPercabangan {
+
+    public static void main(String[] args) {
+        int n = 5; 
+        System.out.println("Hasil: " + hitungFibonacci(n));
+    }
+
+    public static int hitungFibonacci(int nilai) {
+        if (nilai <= 1) {
+            return nilai;
+        } else {
+            return hitungFibonacci(nilai - 1) + hitungFibonacci(nilai - 2);
+        }
+    }
+}
